@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e8;
+            color: #5a3e2b;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #5a3e2b;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #5a3e2b;
+        }
+
+        .nav-links a:hover {
+            color: #9b6b4a;
+        }
+
+        /* Contact Page */
+        .contact {
+            max-width: 900px;
+            margin: 70px auto;
+            padding: 0 30px;
+        }
+
+        .contact h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+            color: #5a3e2b;
+        }
+
+        .contact h1 span {
+            color: #9b6b4a;
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #765642;
+            max-width: 650px;
+            margin-bottom: 50px;
+        }
+
+        /* Contact Cards */
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .contact-card {
+            background-color: #dfd1c1;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .contact-card h2 {
+            margin-top: 0;
+            color: #5a3e2b;
+        }
+
+        .contact-card p {
+            color: #765642;
+            line-height: 1.7;
+        }
+
+        .contact-card a {
+            color: #8b5e3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-card a:hover {
+            color: #6f472d;
+        }
+
+        /* Message Section */
+        .message {
+            margin-top: 40px;
+            background-color: #5a3e2b;
+            color: #f5f0e8;
+            padding: 35px;
+            border-radius: 20px;
+        }
+
+        .message h2 {
+            margin-top: 0;
+            color: #e8c9a8;
+        }
+
+        .message p {
+            line-height: 1.7;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .contact {
+                margin-top: 40px;
+            }
+
+            .contact h1 {
+                font-size: 45px;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <div class="logo">
+            CHUC'S CORNER
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Contact Page -->
+    <section class="contact">
+
+        <h1>Get in <span>Touch</span></h1>
+
+        <p class="intro">
+            I'd love to hear from you. Whether you want to talk about
+            a project, have a question, or just want to say hello,
+            feel free to reach out.
+        </p>
+
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <div class="contact-card">
+
+                <h2>Email</h2>
+
+                <p>
+                    The best way to reach me is by email.
+                </p>
+
+                <a href="mailto:yourname@email.com">
+                    jchuc@umich.edu
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <a href="<div class="contact-card">
+
+                <h2>Social</h2>
+
+                <p>
+                    You can also find me online.
+                </p>
+
+                <a href="https://www.instagram.com/jchucky50/">
+                    Instagram → https://www.instagram.com/jchucky50/
+                </a>
+
+                <br><br>
+
+                <a href="https://www.linkedin.com/in/jamil-chuc-6832053b6/">
+                    LinkedIn → https://www.linkedin.com/in/jamil-chuc-6832053b6/
+                </a>
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+        <!-- Closing Message -->
+        <div class="message">
+
+            <h2>Let's connect.</h2>
+
+            <p>
+                I'm always open to meeting new people, learning about
+                interesting ideas, and connecting with others.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

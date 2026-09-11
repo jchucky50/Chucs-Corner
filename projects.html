@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e8;
+            color: #5a3e2b;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #5a3e2b;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #5a3e2b;
+        }
+
+        .nav-links a:hover {
+            color: #9b6b4a;
+        }
+
+        /* Projects Page */
+        .projects {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 0 30px;
+        }
+
+        .projects h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+            color: #5a3e2b;
+        }
+
+        .projects h1 span {
+            color: #9b6b4a;
+        }
+
+        .intro {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #765642;
+            margin-bottom: 50px;
+        }
+
+        /* Project Cards */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #dfd1c1;
+            padding: 30px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(90, 62, 43, 0.15);
+        }
+
+        .project-card h2 {
+            margin-top: 0;
+            font-size: 26px;
+            color: #5a3e2b;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #765642;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background-color: #f5f0e8;
+            color: #8b5e3c;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #8b5e3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            color: #6f472d;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .projects {
+                margin-top: 40px;
+            }
+
+            .projects h1 {
+                font-size: 45px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <div class="logo">
+            CHUC'S CORNER
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Projects -->
+    <section class="projects">
+
+        <h1>My <span>Projects</span></h1>
+
+        <p class="intro">
+            HA, you caught me! It's pretty empty.
+            I'm still new to this, but much to come on the way!
+        </p>
+
+
+        <div class="project-grid">
+
+
+            <!-- Project 1 -->
+            <div class="project-card">
+
+                <h2>My Website</h2>
+
+                <p>
+                    This site was my first project, using HTML and CSS. 
+                    While experimenting as a young Data Science Major, 
+                    I taught myself how to build this fropm scratch. 
+                    It was a lot of work... but here we are!
+                </p>
+
+                <span class="project-tag">
+                    Web Development
+                </span>
+
+                <br>
+
+                <a href="#" class="project-link">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="project-card">
+
+                <h2>Project Two</h2>
+
+                <p>
+                    COMING SOON!
+                </p>
+
+                <span class="project-tag">
+                    TBD!
+                </span>
+
+                <br>
+
+                <a href="#" class="project-link">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="project-card">
+
+                <h2>Project Three</h2>
+
+                <p>
+                    COMING SOON!
+                </p>
+
+                <span class="project-tag">
+                    TBD!
+                </span>
+
+                <br>
+
+                <a href="#" class="project-link">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <!-- Project 4 -->
+            <div class="project-card">
+
+                <h2>Project Four</h2>
+
+                <p>
+                    COMING SOON!
+                </p>
+
+                <span class="project-tag">
+                    TBD!
+                </span>
+
+                <br>
+
+                <a href="#" class="project-link">
+                    View Project →
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</body>
+</html>
