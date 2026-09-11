@@ -3,87 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Chucs-Corner</title>
+
+    <title>Resume | Chuc's Corner</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background-color: #f5f0e8;
+            color: #5a3e2b;
         }
 
-        header {
-            padding: 30px;
-            background-color: #222;
-            color: white;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background-color: #f5f0e8;
         }
 
-        nav a {
-            color: white;
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #5a3e2b;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
             text-decoration: none;
-            margin: 0 15px;
+            color: #5a3e2b;
+            font-size: 16px;
         }
 
-        main {
-            padding: 40px 20px;
+        .nav-links a:hover {
+            color: #9b6b4a;
+        }
+
+        .resume-section {
+            text-align: center;
+            padding: 60px 10%;
+        }
+
+        .hello {
+            font-size: 15px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            color: #9b6b4a;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 15px 0;
+            color: #5a3e2b;
+        }
+
+        h1 span {
+            color: #9b6b4a;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #765642;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .buttons {
-            margin-bottom: 25px;
+            margin-top: 30px;
+            margin-bottom: 40px;
         }
 
-        .buttons a {
+        .button {
             display: inline-block;
-            padding: 12px 20px;
-            margin: 5px;
-            background-color: #222;
-            color: white;
+            padding: 14px 25px;
+            margin-right: 10px;
+            border-radius: 30px;
             text-decoration: none;
-            border-radius: 5px;
+            background-color: #8b5e3c;
+            color: white;
+            font-weight: bold;
         }
 
-        iframe {
+        .button:hover {
+            background-color: #6f472d;
+        }
+
+        .secondary {
+            background-color: transparent;
+            color: #8b5e3c;
+            border: 2px solid #8b5e3c;
+        }
+
+        .secondary:hover {
+            background-color: #8b5e3c;
+            color: white;
+        }
+
+        .resume-viewer {
             width: 90%;
-            height: 800px;
+            max-width: 900px;
+            height: 1000px;
+            margin: 0 auto;
+            display: block;
             border: none;
             background-color: white;
+        }
+
+        .intro {
+            background-color: #5a3e2b;
+            color: #f5f0e8;
+            text-align: center;
+            padding: 50px 15%;
+            margin-top: 70px;
+        }
+
+        .intro h2 {
+            color: #e8c9a8;
+        }
+
+        @media (max-width: 800px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .resume-section {
+                padding: 40px 5%;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+
+            .resume-viewer {
+                width: 100%;
+                height: 700px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>My Resume</h1>
+    <nav>
+        <div class="logo">CHUC'S CORNER</div>
 
-        <nav>
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="projects.html">Projects</a>
             <a href="resume.html">Resume</a>
             <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
+    <section class="resume-section">
 
-        <h2>Jamil Chuc</h2>
+        <p class="hello">MY RESUME</p>
+
+        <h1>Jamil <span>Chuc</span></h1>
+
+        <p class="description">
+            Here you can find my resume, including my education,
+            experience, projects, skills, and interests.
+        </p>
 
         <div class="buttons">
-            <a href="Jamil_Chuc_Resume.pdf" target="_blank">
+
+            <a href="Jamil_Chuc_Resume.pdf" target="_blank" class="button">
                 View Resume
             </a>
 
-            <a href="Jamil_Chuc_Resume.pdf" download>
+            <a href="Jamil_Chuc_Resume.pdf" download class="button secondary">
                 Download Resume
             </a>
+
         </div>
 
-        <iframe src="Jamil_Chuc_Resume.pdf"></iframe>
+        <iframe
+            class="resume-viewer"
+            src="Jamil_Chuc_Resume.pdf">
+        </iframe>
 
-    </main>
+    </section>
+
+    <section class="intro">
+        <h2>Thanks for stopping by!</h2>
+    </section>
 
 </body>
 </html>
